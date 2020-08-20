@@ -1,5 +1,3 @@
-katz_deli = ["A","B"]
-
 def line(array)
   line_as_string = array.each_with_index.map{|name, index| "#{index+1}. #{name}"}.join(" ")
   puts array.length == 0 ? "The line is currently empty." : "The line is currently: #{line_as_string}"
@@ -19,5 +17,3 @@ def now_serving(array)
     array.shift
   end
 end
-
-now_serving(katz_deli)
